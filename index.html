@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- custom-css -->
     <link rel="stylesheet" href="./style/style.css" />
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
     <header class="header-sec">
@@ -61,55 +61,124 @@
             </div>
           </div>
         </div>
-        <div class="header-btm-wrpr">
-          <div class="nav-container">
-            <div class="header-btm-wrpr-inr">
-              <div class="nav-logo">
-                <a href="index.html">
-                  <img src="./assets/nav-logo.png" alt="nav-logo" />
-                </a>
-              </div>
-              <div class="close-btn">
-                <span></span>
-                <!-- <div class="navbar-btn">
+        <div class="header-main-btm">
+          <div class="header-btm-wrpr">
+            <div class="nav-container">
+              <div class="header-btm-wrpr-inr">
+                <div class="nav-logo">
+                  <a href="index.html">
+                    <img src="./assets/nav-logo.png" alt="nav-logo" />
+                  </a>
+                </div>
+                <div class="close-btn">
+                  <span></span>
+                  <!-- <div class="navbar-btn">
                   <a class="primary-btn" href="">
                     <span>Contact Us</span>
                     <img src="./assets-1/header-btm-img-1.png" alt="header-btm-img-1" />
                   </a>
                 </div> -->
-              </div>
+                </div>
 
-              <div class="navbar-collesped">
-                <ul>
-                  <li><a class="nav-link active" href="">Home</a></li>
-                  <li><a class="nav-links" href="">About us</a></li>
-                  <li><a class="nav-links" href="">Our Servics</a></li>
-                  <li><a class="nav-links" href="">Communities</a></li>
-                  <li><a class="nav-links" href="">Gallery</a></li>
-                  <li><a class="nav-links" href="">Communities</a></li>
-                  <li><a class="nav-links" href="">FAQ</a></li>
-                  <li>
-                    <a class="nav-links" href="">Terms and Conditions </a>
-                  </li>
-                </ul>
-                <div class="navbar-btn">
-                  <a class="primary-btn" href="">
-                    <span>Contact Us</span>
-                    <div class="primary-btn-1">
-                      <img
-                        src="./assets/footer-mid-img.png"
-                        alt="footer-mid-img"
-                      />
-                    </div>
-                  </a>
+                <div class="navbar-collesped">
+                  <ul>
+                    <li><a class="nav-link active" href="./index.html">Home</a></li>
+                    <li><a class="nav-links" href="./workout.html">About us</a></li>
+                    <li><a class="nav-links" href="">Our Servics</a></li>
+                    <li><a class="nav-links" href="">Communities</a></li>
+                    <li><a class="nav-links" href="">Gallery</a></li>
+                    <li><a class="nav-links" href="">Communities</a></li>
+                    <li><a class="nav-links" href="">FAQ</a></li>
+                    <li>
+                      <a class="nav-links" href="">Terms and Conditions </a>
+                    </li>
+                  </ul>
+                  <div class="navbar-btn">
+                    <a class="primary-btn" href="">
+                      <span>Contact Us</span>
+                      <div class="primary-btn-1">
+                        <img
+                          src="./assets/footer-mid-img.png"
+                          alt="footer-mid-img"
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="header-sub-btm-wrpr">
+            <div class="navbar-btn-1">
+              <button class="primary-btn contact-btn" href="">
+                <span>Contact Us</span>
+                <div class="primary-btn-1">
+                  <img src="./assets/footer-mid-img.png" alt="footer-mid-img" />
+                </div>
+              </button>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <div class="over-lay"></div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Popup Form -->
+    <div class="popup-form" id="popupForm">
+      <div class="form-box">
+        <span class="closein-close">&times;</span>
+
+        <!-- Left side image -->
+        <div class="form-left">
+          <div class="form-left-img">
+            <img src="./assets/galary-left-img.png" alt="galary-left-img" />
+          </div>
+        </div>
+
+        <!-- Right side form -->
+        <div class="form-right">
+          <h2 id="formTitle">Sign In</h2>
+          <form id="authForm">
+            <input
+              type="text"
+              id="nameField"
+              placeholder="Full Name"
+              style="display: none"
+            />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+          <p id="toggleText">
+            Don't have an account? <span id="toggleForm">Sign Up</span>
+          </p>
+          <div class="or-text">
+            <p>or</p>
+          </div>
+          <div class="form-sub-rhgt">
+            <div class="form-sub-rhgt-img-1">
+              <ul class="form-sub-rhgt-img-1">
+                <li><a class="form-sub-rhgt-img" href="">
+                  <img src="./assets/pop-up-img-1.png" alt="pop-up-img-1">
+                </a></li>
+                <li><a class="form-sub-rhgt-img" href="">
+                  <img src="./assets/pop-up-img-2.png" alt="pop-up-img-2">
+                </a></li>
+                <li><a class="form-sub-rhgt-img" href="">
+                  <img src="./assets/pop-up-img-3.png" alt="pop-up-img-3">
+                </a></li>
+              </ul>
+            </div>
+            <p>
+              By continuing, you confirm that you have read and agree to our
+              Terms & Conditions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- banner-section -->
 
@@ -1060,7 +1129,7 @@
           </p>
         </div>
         <div class="faq-btm-hdr">
-          <div class="faq-item">
+          <div class="faq-item" data-aos="fade-down-right" data-aos-duration="1500">
             <div class="faq-question">
               <div class="faq-question-1">
                 <h6>
@@ -1082,7 +1151,7 @@
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" data-aos="fade-down-right" data-aos-duration="2000">
             <div class="faq-question">
               <div class="faq-question-1">
                 <h6>
@@ -1104,7 +1173,7 @@
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" data-aos="fade-down-right" data-aos-duration="1000">
             <div class="faq-question">
               <div class="faq-question-1">
                 <h6>
@@ -1153,8 +1222,8 @@
                 <div class="footer-sub-menu">Menu</div>
               </div>
               <ul>
-                <li><a class="footer-links" href="">Home</a></li>
-                <li><a class="footer-links" href="">ABOUT US</a></li>
+                <li><a class="footer-links" href="./index.html">Home</a></li>
+                <li><a class="footer-links" href="./workout.html">ABOUT US</a></li>
                 <li><a class="footer-links" href="">OUR SERVICS</a></li>
                 <li><a class="footer-links" href="">COUMMUNITIES</a></li>
                 <li><a class="footer-links" href="">GALLERY</a></li>
@@ -1165,7 +1234,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-18">
+            <div class="col-18 col-36">
               <div class="footer-write-us">
                 <div class="footer-sub-write">Write For Us</div>
                 <p>
