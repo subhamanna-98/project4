@@ -63,6 +63,47 @@ toggleText.addEventListener("click", (e) => {
     }
   }
 });
+ 
+
+  // counter-sec
+
+  const counters = document.querySelectorAll(".counter");
+  const section = document.querySelector("#counter-section");
+  let started = false;
+
+  function startCounter() {
+    if (started) return;
+    started = true;
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target");
+      const speed = 50; // small number = faster
+      let count = 0;
+
+      const updateCount = () => {
+        const inc = target / 100;
+        if (count < target) {
+          count += inc;
+          counter.innerText = Math.ceil(count);
+          requestAnimationFrame(updateCount);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  }
+
+  // trigger when section visible
+  window.addEventListener("scroll", () => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const triggerHeight = window.innerHeight - 150;
+    if (sectionTop < triggerHeight) {
+      startCounter();
+    }
+  });
+ 
+
 
 // form-validation
 

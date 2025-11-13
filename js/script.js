@@ -65,12 +65,12 @@ toggleText.addEventListener("click", (e) => {
 });
 
  // counter-sec
-    const counters = document.querySelectorAll(".counter");
+  const counters = document.querySelectorAll(".counter");
 
   const runCounter = (counter) => {
     counter.innerText = "0";
     const target = +counter.getAttribute("data-target");
-    const speed = 500; // lower = faster
+    const speed = 200; // lower = faster
 
     const update = () => {
       const value = +counter.innerText;
@@ -97,6 +97,7 @@ toggleText.addEventListener("click", (e) => {
   }, { threshold: 0.5 });
 
   counters.forEach(counter => observer.observe(counter));
+
 
 
 // client-trust-section
