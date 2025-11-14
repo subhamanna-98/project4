@@ -21,48 +21,8 @@ closeBtn.addEventListener("click", () =>{
     }
 });
 
-// pop-up-section
-const contactBtn = document.querySelector(".contact-btn");
-const popupForm = document.getElementById("popupForm");
-const overlay = document.getElementById("overlay");
-const signInClose = document.querySelector(".closein-close");
-const formTitle = document.getElementById("formTitle");
-const nameField = document.getElementById("nameField");
-const toggleText = document.getElementById("toggleText");
 
-let isSignUp = false;
-
-// Show form
-contactBtn.addEventListener("click", () => {
-  popupForm.classList.add("active");
-  overlay.classList.add("active");
-});
-
-// Close form
-signInClose.addEventListener("click", () => {
-  popupForm.classList.remove("active");
-  overlay.classList.remove("active");
-});
-overlay.addEventListener("click", () => {
-  popupForm.classList.remove("active");
-  overlay.classList.remove("active");
-});
-
-// Toggle Sign In / Sign Up
-toggleText.addEventListener("click", (e) => {
-  if (e.target.id === "toggleForm") {
-    isSignUp = !isSignUp;
-    if (isSignUp) {
-      formTitle.textContent = "Sign Up";
-      nameField.style.display = "block";
-      toggleText.innerHTML = 'Already have an account? <span id="toggleForm">Sign In</span>';
-    } else {
-      formTitle.textContent = "Sign In";
-      nameField.style.display = "none";
-      toggleText.innerHTML = 'Don’t have an account? <span id="toggleForm">Sign Up</span>';
-    }
-  }
-});
+// counter-section
 
  // counter-sec
   const counters = document.querySelectorAll(".counter");
@@ -98,18 +58,6 @@ toggleText.addEventListener("click", (e) => {
 
   counters.forEach(counter => observer.observe(counter));
 
-
-
-// client-trust-section
-  $(document).ready(function() {
-  $(".toggle-header").click(function() {
-    
-    $(this).toggleClass("active");
-
-   
-    $(this).next(".toggle-content").slideToggle(300);
-  });
-});
 
 // property-section
 const swiper = new Swiper(".mySwiper", {
@@ -162,20 +110,28 @@ const swiper = new Swiper(".mySwiper", {
 },
   });
 
+
+
+ 
+
+
+
+
+
 // faq-section
-  $(document).ready(function () {
-  $(".faq-question").click(function () {
+$(function(){
+  $(".faq-arrow").on("click", function(){
+    var $arrow = $(this);
+    var $item = $arrow.closest(".faq-item");
+    var $content = $item.find(".faq-content");
 
-    // Close all other answers
-    $(".faq-answer").not($(this).next()).slideUp();
-    $(".faq-question").not(this).removeClass("active");
+    $content.stop(true,true).slideToggle(90);
+    $arrow.toggleClass("open");
 
-    // Toggle current one
-    $(this).next(".faq-answer").slideToggle();
-    $(this).toggleClass("active");
+    $(".faq-item").not($item).find(".faq-content").slideUp(90);
+    $(".faq-arrow").not($arrow).removeClass("open");
   });
 });
-
 
 // form-validation
 
@@ -203,26 +159,60 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   this.reset(); // optional: clear form
 });
 
-
-
-const slider = document.getElementById("slider");
-const slides = document.querySelectorAll(".slide");
-const next = document.getElementById("next");
-const prev = document.getElementById("prev");
-
-let index = 0;
-
-next.addEventListener("click", () => {
-  index++;
-  if (index >= slides.length) index = 0;
-  slider.style.transform = `translateX(-${index * 100}%)`;
+// galary-section
+const swiper1 = new Swiper(".mySwiper1", {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  loop: true,
+  speed: 500,
+  navigation: {
+    nextEl: ".next-btn1",
+    prevEl: ".prev-btn1",
+  },
+   breakpoints: {
+    1300: {
+      slidesPerView: 2,
+      
+    },
+     1200: {
+      slidesPerView: 2,
+      
+    },
+     1100: {
+      slidesPerView: 2,
+      
+    },
+     1000: {
+      slidesPerView: 2,
+     
+    },
+    900: {
+      slidesPerView: 2,
+     
+    },
+    800: {
+      slidesPerView: 2,
+     
+    },
+    700: {
+      slidesPerView: 2,
+      
+    },
+    600: {
+      slidesPerView: 2,
+     
+    },
+    500: {
+      slidesPerView: 2,
+      
+    },
+     400: {
+      slidesPerView: 2,
+      
+    },
+    300: {
+      slidesPerView: 2,
+      
+    },
+},
 });
-
-prev.addEventListener("click", () => {
-  index--;
-  if (index < 0) index = slides.length - 1;
-  slider.style.transform = `translateX(-${index * 100}%)`;
-});
-
-
-   
