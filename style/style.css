@@ -777,7 +777,7 @@ html {
   border: none;
   outline: none;
   font-size: 20px;
-  color: var(--fivth-color);
+  color: var(--tertary-color);
   font-weight: 400;
   margin-left: 120px;
 }
@@ -2006,7 +2006,9 @@ content:"";
   right: 15px;
 }
 .property-cntn-2 >a> img {
-  margin: 0 auto;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
 }
 .slider-container {
   position: relative;
