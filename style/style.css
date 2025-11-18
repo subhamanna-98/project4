@@ -664,16 +664,28 @@ html {
   cursor: pointer;
 }
 .workout-dropdown > ul {
-  position: absolute;
+  /* position: absolute;
   top: 100%;
   left: 0%;
   right: 0;
   width: 100%;
-  display: none;
+  display: none; */
+   position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   background: var(--primary-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+  z-index: 10;
 }
 .workout-dropdown:hover > ul {
-  display: block;
+  /* display: block; */
+   opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .workout-dropdown > ul > li > a {
   font-size: 18px;
