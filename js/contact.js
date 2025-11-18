@@ -22,6 +22,13 @@ closeBtn.addEventListener("click", () =>{
 });
 
 
+// loading-screan
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("preloader").style.display = "none";
+  }, 5000); // 20 seconds
+});
+
 // form-validation
 
 document.getElementById("contactForm").addEventListener("submit", function(e) {

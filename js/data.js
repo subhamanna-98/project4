@@ -83,3 +83,11 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   errorMsg.textContent = "Form submitted successfully!";
   this.reset(); // optional: clear form
 });
+
+
+// loading-screan
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("preloader").style.display = "none";
+  }, 5000); // 20 seconds
+});

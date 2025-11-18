@@ -1,3 +1,11 @@
+// loading-screan
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("preloader").style.display = "none";
+  }, 5000); // 20 seconds
+});
+
+
 // navbar-section
 const closeBtn = document.querySelector(".close-btn");
 const navbarCollesped = document.querySelector(".navbar-collesped");
@@ -119,19 +127,26 @@ const swiper = new Swiper(".mySwiper", {
 
 
 // faq-section
-$(function(){
-  $(".faq-arrow").on("click", function(){
-    var $arrow = $(this);
-    var $item = $arrow.closest(".faq-item");
-    var $content = $item.find(".faq-content");
+$(function () {
+    $(".faq-question, .faq-arrow").on("click", function () {
 
-    $content.stop(true,true).slideToggle(90);
-    $arrow.toggleClass("open");
+        var $item = $(this).closest(".faq-item");
+        var $content = $item.find(".faq-content");
+        var $arrow = $item.find(".faq-arrow img");
 
-    $(".faq-item").not($item).find(".faq-content").slideUp(90);
-    $(".faq-arrow").not($arrow).removeClass("open");
-  });
+        // toggle only this item
+        $content.stop(true, true).slideToggle(150);
+        $arrow.toggleClass("open");
+
+        // close others
+        $(".faq-item").not($item).find(".faq-content").slideUp(150);
+        $(".faq-item").not($item).find(".faq-arrow img").removeClass("open");
+    });
 });
+
+
+
+
 
 // form-validation
 
@@ -199,19 +214,19 @@ const swiper1 = new Swiper(".mySwiper1", {
       
     },
     600: {
-      slidesPerView: 2,
+      slidesPerView: 1,
      
     },
     500: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       
     },
      400: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       
     },
     300: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       
     },
 },
