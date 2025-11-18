@@ -1192,6 +1192,10 @@ html {
   color: var(--secondary-color);
   margin-right: 43px;
 }
+#error-msg{
+  color: var(--tertary-color);
+  margin-top: 10px;
+}
 @media screen and (max-width: 2600px) {
   .banner-cntn {
     position: absolute;

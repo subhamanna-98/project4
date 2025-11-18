@@ -233,10 +233,12 @@
                 </div>
               </div>
               <div class="col-25">
-                <button class="banner-btm-btn" href="">
-                  <span>Search</span>
-                  <img src="./assets/banner-search.png" alt="banner-search" />
-                </button>
+                <div class="search-wrapper">
+                  <input type="text" placeholder="Search" />
+                  <div class="search-icon">
+                    <img src="./assets/banner-search.png" alt="search" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -718,10 +720,9 @@
                   <p>Clients</p>
                 </div>
                 <div class="clirnt-rhgt-img-1">
-                  <img
-                    src="./assets/header-btm-img-1.png"
-                    alt="header-btm-img-1"
-                  />
+                  <a class="client-arrow" href="">
+                    <img src="./assets/client-arrow.png" alt="client-arrow">
+                  </a>
                 </div>
               </div>
             </div>
@@ -846,10 +847,12 @@
                         <p>2238 Sthjghkmn, Rd, SF 1537 sqft</p>
                       </div>
                       <div class="property-cntn-2">
-                        <img
+                        <a href="">
+                         <img
                           src="./assets/property-btm-img.png"
                           alt="property-btm-img"
                         />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -869,10 +872,12 @@
                         <p>2238 Sthjghkmn, Rd, SF 1537 sqft</p>
                       </div>
                       <div class="property-cntn-2">
-                        <img
+                       <a href="">
+                         <img
                           src="./assets/property-btm-img.png"
                           alt="property-btm-img"
                         />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -892,10 +897,12 @@
                         <p>2238 Sthjghkmn, Rd, SF 1537 sqft</p>
                       </div>
                       <div class="property-cntn-2">
-                        <img
+                        <a href="">
+                         <img
                           src="./assets/property-btm-img.png"
                           alt="property-btm-img"
                         />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -915,10 +922,12 @@
                         <p>2238 Sthjghkmn, Rd, SF 1537 sqft</p>
                       </div>
                       <div class="property-cntn-2">
-                        <img
+                        <a href="">
+                         <img
                           src="./assets/property-btm-img.png"
                           alt="property-btm-img"
                         />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -938,10 +947,12 @@
                         <p>2238 Sthjghkmn, Rd, SF 1537 sqft</p>
                       </div>
                       <div class="property-cntn-2">
-                        <img
+                        <a href="">
+                         <img
                           src="./assets/property-btm-img.png"
                           alt="property-btm-img"
                         />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1145,9 +1156,19 @@
               <div class="footer-contact-us">
                 <div class="footer-sub-contact">Contact Us</div>
                 <form class="footer-form" id="contactForm" action="">
-                  <input type="text" name="" id="name" placeholder="Name*" />
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name*"
+                  />
 
-                  <input type="email" name="" id="email" placeholder="Email*" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email*"
+                  />
 
                   <textarea name="" id="msg" placeholder="Massage*"></textarea>
                   <button class="send-btn" type="submit">

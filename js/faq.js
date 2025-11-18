@@ -51,27 +51,44 @@ $(function () {
 
 // form-validation
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault(); // stop default submission
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const errorMsg = document.getElementById("error-msg");
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const namePattern = /(?=.*[A-Z])(?=.*[a-z])/; // 1 uppercase + 1 lowercase
-  const emailPattern = /[!@#$%^&*(),.?":{}|<>_-]/; // at least 1 special char
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let msg = document.getElementById("msg").value.trim();
+    let err = document.getElementById("error-msg");
 
-  if (!namePattern.test(name)) {
-    errorMsg.textContent = "Name must contain at least one uppercase and one lowercase letter.";
-    return;
-  }
+    // Regex
+    let regexUpper = /[A-Z]/;
+    let regexLower = /[a-z]/;
+    let regexSpecial = /[!@#$%^&*(),.?":{}|<>]/;
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!emailPattern.test(email)) {
-    errorMsg.textContent = "Email must contain at least one special character.";
-    return;
-  }
+    // Validation
+    if (!regexUpper.test(name) || !regexLower.test(name)) {
+      err.textContent = "Name must contain at least 1 uppercase and 1 lowercase letter.";
+      return;
+    }
 
-  errorMsg.style.color = "#ffffff";
-  errorMsg.textContent = "Form submitted successfully!";
-  this.reset(); // optional: clear form
-});
+    if (!emailPattern.test(email)) {
+      err.textContent = "Please enter a valid email address.";
+      return;
+    }
+
+    if (
+      !regexUpper.test(msg) ||
+      !regexLower.test(msg) ||
+      !regexSpecial.test(msg)
+    ) {
+      err.textContent =
+        "Message must contain uppercase, lowercase, and 1 special character.";
+      return;
+    }
+
+    // Success
+    err.style.color = "green";
+    err.textContent = "Form submitted successfully!";
+    this.submit(); // Form submit hoye jabe
+  });
 

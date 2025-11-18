@@ -708,39 +708,8 @@ html {
 .workout-dropdown > ul > li > a:hover::before {
   background: var(--tertary-color) !important;
 }
-.banner-btm-cntn-2 > h5 {
-}
-.banner-btm-btn {
-  width: 180px;
-  height: 63px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 72px;
-  background: var(--primary-color);
-  border: 1px solid var(--tertary-color);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s linear;
-  border: none;
-  outline: none;
-}
 
-.banner-btm-btn:hover {
-  background: linear-gradient(
-    to left,
-    var(--secondary-color),
-    var(--tertary-color)
-  );
-}
-.banner-btm-btn:hover > img {
-  transform: rotate(90deg);
-  transition: 0.5s linear;
-}
-.banner-btm-btn:hover > span {
-  color: var(--secondary-color);
-}
-.banner-btm-btn::before {
+.search-wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -754,7 +723,7 @@ html {
   );
   transform: skewX(-25deg);
 }
-.banner-btm-btn:hover::before {
+.search-wrapper:hover::before {
   animation: shine 1s;
   transition: 0.5s linear;
 }
@@ -784,22 +753,62 @@ html {
   height: 300px;
   opacity: 0;
 } */
-.banner-btm-btn > span {
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--tertary-color);
-  margin-left: 29px;
-}
-.banner-btm-btn > img {
-  width: 56px;
-  height: 56px;
-  background: var(--secondary-color);
+ .search-wrapper:hover>.search-icon>img{
+  transform: rotate(90deg);
+  transition: 0.5s linear;
+ }
+.search-wrapper {
+  width: 180px;
+  height: 63px;
+  background: #000;
+  border-radius: 72px;
+  border: 1px solid var(--fivth-color);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
+   overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.search-wrapper input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: var(--fivth-color);
+  font-weight: 400;
+  margin-left: 120px;
+}
+
+.search-wrapper input::placeholder {
+  color: var(--fivth-color);
+}
+
+.search-icon {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
+  position: absolute;
+ right: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit:cover;
   margin-left: auto;
 }
+
+
+
+
+
 
 /* dream-house-section */
 .dream-sec {
@@ -1710,9 +1719,18 @@ content:"";
   top: 10px;
   right: 10px;
 }
-.clirnt-rhgt-img-1 > img {
+.client-arrow{
   width: 54px;
   height: 54px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-arrow>img{
+  width: 16px;
+  height: 16px;
   object-fit: cover;
 }
 
@@ -1987,7 +2005,7 @@ content:"";
   position: absolute;
   right: 15px;
 }
-.property-cntn-2 > img {
+.property-cntn-2 >a> img {
   margin: 0 auto;
 }
 .slider-container {
@@ -2596,6 +2614,11 @@ content:"";
   color: var(--secondary-color);
   margin-right: 43px;
 }
+#error-msg{
+  color: var(--tertary-color);
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 2570px) {
   .navbar-btn-1 {
     margin-left: 25px;
@@ -3808,7 +3831,19 @@ content:"";
   } */
   .nature-living-rhgt-img-1 {
     max-width: 100%;
-    margin-right: 0;
+    height: 500px;
+    margin: 10px auto;
+  }
+  .nature-living-rhgt-img-1>img{
+    border-radius: 40px;
+  }
+  .nature-living-rhgt-img-2{
+     max-width: 100%;
+    height: 400px;
+    margin: 0px auto;
+  }
+  .nature-living-rhgt-img-2>img{
+    border-radius: 40px;
   }
   .nature-living-card-cntn-2 > span {
     font-size: 14px;
@@ -4085,6 +4120,16 @@ content:"";
   .client-cntn-2 > p {
     margin-right: 0px;
   }
+  .your-need-mid-card{
+    max-width: 100%;
+    height: 500px;
+    margin: 10px auto;
+    border-radius: 40px;
+  }
+  .your-need-mid-card-cntn > h2 {
+        margin-bottom: 100px;
+  }
+ 
   .dots span {
     width: 20px;
     height: 20px;
@@ -4362,6 +4407,20 @@ content:"";
     font-size: 39px;
     margin-bottom: 20px;
   }
+  .search-wrapper{
+    width: 155px;
+    height: 50px;
+  }
+  .search-wrapper>input{
+    font-size: 15px;
+    margin-left: 70px;
+  }
+  .search-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit:cover;
+  margin-left: auto;
+}
 }
 @media screen and (max-width: 417px) {
   .faq-arrow {
