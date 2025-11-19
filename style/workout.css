@@ -1801,8 +1801,8 @@ html {
   .state-box {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 280px);
-    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
     border-radius: 25px;
   }
 
@@ -1815,22 +1815,22 @@ html {
     margin-top: 15px;
   }
   .state-img > img {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
   }
   .state-area-1 > h2 {
     margin-left: 10px;
-    margin-top: 26px;
+    margin-top: 32px;
   }
   .state-area-1 > p {
     margin-left: 10px;
   }
   .state-img-1 > img {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
   }
   .state-area-2 > h2 {
-    margin-right: 26px;
+    margin-right: 34px;
   }
   .circle {
     width: 140px;
@@ -1841,6 +1841,38 @@ html {
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
+  }
+}
+@media screen and (max-width:615px) {
+  .state-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(2, 280px);
+    border-radius: 25px;
+  }
+  .state-right-img {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .state-img > img {
+    width: 280px;
+    height: 280px;
+  }
+  .state-area-1 > h2 {
+    margin-left: 10px;
+    margin-top: 32px;
+  }
+  .state-area-1 > p {
+    margin-left: 10px;
+  }
+  .state-img-1 > img {
+    width: 280px;
+    height: 280px;
+  }
+  .state-area-2 > h2 {
+    margin-right: 34px;
   }
 }
 @media screen and (max-width: 576px) {
