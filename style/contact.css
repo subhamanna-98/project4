@@ -1048,11 +1048,9 @@ html {
 }
 @media screen and (max-width: 1100px) {
   .col-19 {
-    width: 60%;
+    width: 100%;
   }
-  .footer-row {
-    justify-content: center;
-  }
+ 
   .send-btn {
     margin-bottom: 15px;
   }
@@ -1068,9 +1066,7 @@ html {
   .footer-sub-contact {
     margin-bottom: 14px;
   }
-  .col-36 {
-    margin-left: 20px !important;
-  }
+ 
   .footer-sub-mid-hdr {
     margin-bottom: 15px;
   }
@@ -1085,6 +1081,20 @@ html {
   .contact-row {
     justify-content: center;
   }
+}
+@media screen  and (max-width:900px){
+  .footer-write-us > p {
+  margin-bottom: 10px;
+}
+.footer-sub-write{
+  margin-bottom: 10px;
+}
+.footer-sub-contact {
+  margin-bottom: 10px;
+}
+.footer-mid-btn{
+  margin-bottom: 20px;
+}
 }
 @media screen and (max-width: 750px) {
   .col-19 {

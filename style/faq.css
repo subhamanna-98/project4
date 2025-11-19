@@ -1085,11 +1085,9 @@ html {
 }
 @media screen and (max-width: 1100px) {
   .col-19 {
-    width: 60%;
+    width: 100%;
   }
-  .footer-row {
-    justify-content: center;
-  }
+  
   .send-btn {
     margin-bottom: 15px;
   }
@@ -1127,12 +1125,25 @@ html {
     font-size: 20px;
     font-weight: 500;
   }
+   .footer-write-us > p {
+  margin-bottom: 10px;
+}
+.footer-sub-write{
+  margin-bottom: 10px;
+}
+.footer-sub-contact {
+  margin-bottom: 10px;
+}
+.footer-mid-btn{
+  margin-bottom: 20px;
+}
 }
 @media screen and (max-width: 800px) {
   .faq-question {
     font-size: 18px;
     font-weight: 500;
   }
+ 
 }
 @media screen and (max-width: 750px) {
   .col-19 {
@@ -1263,9 +1274,7 @@ html {
 .col-17{
   width: 100%;
 }
-.col-36 {
- margin-left: 0px !important;
-}
+
 .dots span {
     width: 20px;
     height: 20px;
