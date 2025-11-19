@@ -42,32 +42,33 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     // Regex
     let regexUpper = /[A-Z]/;
     let regexLower = /[a-z]/;
-    let regexSpecial = /[!@#$%^&*(),.?":{}|<>]/;
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Validation
+    // Name Validation (1 uppercase & 1 lowercase)
     if (!regexUpper.test(name) || !regexLower.test(name)) {
-      err.textContent = "Name must contain at least 1 uppercase and 1 lowercase letter.";
-      return;
+        err.style.color = "red";
+        err.textContent = "Name must contain at least 1 uppercase and 1 lowercase letter.";
+        return;
     }
 
+    // Email Validation
     if (!emailPattern.test(email)) {
-      err.textContent = "Please enter a valid email address.";
-      return;
+        err.style.color = "red";
+        err.textContent = "Please enter a valid email address.";
+        return;
     }
 
-    if (
-      !regexUpper.test(msg) ||
-      !regexLower.test(msg) ||
-      !regexSpecial.test(msg)
-    ) {
-      err.textContent =
-        "Message must contain uppercase, lowercase, and 1 special character.";
-      return;
+    // Message validation ONLY empty check
+    if (msg === "") {
+        err.style.color = "red";
+        err.textContent = "Message cannot be empty.";
+        return;
     }
 
-    // Success
+    // SUCCESS
     err.style.color = "green";
     err.textContent = "Form submitted successfully!";
-    this.submit(); // Form submit hoye jabe
-  });
+
+    // Now allow page refresh
+    this.submit();  
+});
