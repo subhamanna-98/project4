@@ -1299,18 +1299,12 @@ html {
   .servics-line {
     max-width: 250px;
   }
-
+   .col-18{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 750px) {
-  .col-19 {
-    width: 100%;
-  }
-  .col-18 {
-    width: 100%;
-  }
-  .col-36{
-    margin-left: 0px;
-  }
+ 
   .footer-row {
     justify-content: start;
   }

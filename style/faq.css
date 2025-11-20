@@ -1084,9 +1084,6 @@ html {
   }
 }
 @media screen and (max-width: 1100px) {
-  .col-19 {
-    width: 100%;
-  }
   
   .send-btn {
     margin-bottom: 15px;
@@ -1103,9 +1100,7 @@ html {
   .footer-sub-contact {
     margin-bottom: 14px;
   }
-  .col-36 {
-    margin-left: 20px !important;
-  }
+  
   .footer-sub-mid-hdr {
     margin-bottom: 15px;
   }
@@ -1118,6 +1113,11 @@ html {
   .faq-question {
     font-size: 21px;
     font-weight: 500;
+  }
+}
+@media screen and (max-width: 992px){
+  .col-19{
+    width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -1143,15 +1143,13 @@ html {
     font-size: 18px;
     font-weight: 500;
   }
- 
+  .col-18{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 750px) {
-  .col-19 {
-    width: 100%;
-  }
-  .col-18 {
-    width: 100%;
-  }
+ 
+ 
   .footer-row {
     justify-content: start;
   }

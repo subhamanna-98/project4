@@ -1687,7 +1687,9 @@ html {
   }
 }
 @media screen and (max-width: 800px) {
- 
+  .col-18{
+    width: 100%;
+  }
   
   .footer-write-us {
     margin-bottom: 20px;
@@ -1773,9 +1775,7 @@ html {
     padding: 30px 25px;
     margin-bottom: 15px;
   }
-  .col-18{
-    width: 100%;
-  }
+ 
 }
 @media screen and (max-width: 700px) {
   
