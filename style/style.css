@@ -2782,6 +2782,12 @@ content:"";
   .navbar-collesped > ul > li {
     margin-right: 12px;
   }
+   .footer-logo>a>img{
+    margin-left: 50px;
+  }
+  .gallary-left-hdr > h2 {
+        margin-left: 50px;
+}
 }
 @media screen and (max-width: 1250px) {
   /* navbar-sec */
@@ -2951,6 +2957,9 @@ content:"";
   .nature-living-left-hdr {
     margin: 15px auto;
   }
+  .nature-btn{
+    margin: 20px auto;
+  }
   .col-33 {
     width: 50%;
   }
@@ -2963,12 +2972,12 @@ content:"";
     width: 100%;
   }
   .your-need-mid-card{
-    max-width: 100%;
-    width: 100%;
+    max-width: 100% !important;
+    width: 100% !important;
   }
   .your-need-rhgt-card{
-    max-width: 100%;
-    width: 100%;
+    max-width: 100% !important;
+   width: 100% !important;
   }
   .need-btn {
     margin-left: 160px;
@@ -2989,21 +2998,25 @@ content:"";
   
    .galary-rhgt-img {
    max-width: 500px;
- margin-right: 30px;
+ /* margin-right: 30px; */
+ margin: 0 auto;
   }
   .galary-rhgt-img>img{
     border-radius: 40px;
   }
   .galary-rhgt-img-1 {
     max-width: 500px;
-    margin-left: 1px;
+    margin: 0 auto;
   }
   .galary-rhgt-img-1>img{
-    border-radius: 40px;
+  border-radius: 40px;
   }
   .galary-rhgt-btn {
     position: relative;
     right: 172px;
+  }
+  .gallary-left-hdr > h2{
+    margin-left: 50px;
   }
   .col-2 {
     width: 100%;
@@ -3064,6 +3077,9 @@ margin-left: -530px;
   .faq-question-1 > h6 {
     font-size: 25px;
     margin-right: 40px;
+  }
+  .footer-logo>a>img{
+    margin-left: 50px;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -3202,14 +3218,15 @@ margin-left: -530px;
   }
   .galary-rhgt-img {
    max-width: 400px;
- margin-right: 30px;
+ /* margin-right: 30px; */
+ margin: 0 auto;
   }
   .galary-rhgt-img>img{
     border-radius: 40px;
   }
   .galary-rhgt-img-1 {
     max-width: 400px;
-    margin-left: 1px;
+    margin: 0 auto;
   }
   .galary-rhgt-img-1>img{
     border-radius: 40px;
@@ -3432,14 +3449,15 @@ margin-left: -530px;
   }
   .galary-rhgt-img {
    max-width: 350px;
- margin-right: 30px;
+ /* margin-right: 30px; */
+ margin: 0 auto;
   }
   .galary-rhgt-img>img{
     border-radius: 40px;
   }
   .galary-rhgt-img-1 {
     max-width: 350px;
-    margin-left: 1px;
+    margin: 0 auto;
   }
   .galary-rhgt-img-1>img{
     border-radius: 40px;
@@ -3473,15 +3491,16 @@ margin-left: -530px;
     margin-left: -250px;
   }
   .galary-rhgt-img {
-   max-width: 100%;
- margin-right: 30px;
+   max-width: 320px;
+ /* margin-right: 30px; */
+ margin: 0 auto;
   }
   .galary-rhgt-img>img{
     border-radius: 40px;
   }
   .galary-rhgt-img-1 {
-    max-width: 100%;
-    margin-left: 1px;
+    max-width: 320px;
+    margin: 0 auto;
   }
   .galary-rhgt-img-1>img{
     border-radius: 40px;
@@ -3777,6 +3796,18 @@ margin-left: -530px;
     width: 12px;
     height:12px ;
   }
+  .galary-rhgt-img {
+   max-width: 300px;
+ /* margin-right: 30px; */
+ margin: 0 auto;
+  }
+  .galary-rhgt-img>img{
+    border-radius: 40px;
+  }
+  .galary-rhgt-img-1 {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -3853,6 +3884,15 @@ margin-left: -530px;
   .galary-rhgt-hdr > h2 {
     font-size: 45px;
     margin-bottom: 30px;
+  }
+  .galary-rhgt-img {
+   max-width: 250px;
+ /* margin-right: 30px; */
+ margin: 0 auto;
+  }
+  .galary-rhgt-img-1 {
+    max-width: 250px;
+    margin: 0 auto;
   }
   .client-rhgt-cntn-1 > p {
     margin-left: -180px;
@@ -3977,6 +4017,7 @@ margin-left: -50px;
   .gallary-left-hdr > h2 {
     font-size: 57px;
     margin-bottom: 36px;
+    margin-left: auto;
   }
   .client-top-hdr > h2 {
     font-size: 40px;
@@ -4161,6 +4202,9 @@ margin-left: -50px;
   .footer-logo {
     max-width: 150px;
   }
+  .footer-logo>a>img {
+        margin-left: 4px;
+  }
   .footer-links {
     font-size: 13px;
   }
@@ -4344,6 +4388,18 @@ margin-left: -90px;
   .client-left-card-2 > p {
   margin-left: auto;
 }
+.galary-rhgt-img {
+   max-width: 100%;
+ /* margin-right: 30px; */
+ margin: 0 auto;
+  }
+  .galary-rhgt-img>img{
+    border-radius: 40px;
+  }
+  .galary-rhgt-img-1 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 500px) {
   .galary-rhgt-btn {
@@ -4535,6 +4591,9 @@ margin-left: -90px;
   object-fit:cover;
   margin-left: auto;
 }
+ .footer-logo>a>img{
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 417px) {
   .faq-arrow {
