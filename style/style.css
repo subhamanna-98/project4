@@ -4017,7 +4017,7 @@ margin-left: -50px;
   .gallary-left-hdr > h2 {
     font-size: 57px;
     margin-bottom: 36px;
-    margin-left: auto;
+    margin-left: 10px;
   }
   .client-top-hdr > h2 {
     font-size: 40px;
@@ -4203,7 +4203,7 @@ margin-left: -50px;
     max-width: 150px;
   }
   .footer-logo>a>img {
-        margin-left: 4px;
+        margin-left: 10px;
   }
   .footer-links {
     font-size: 13px;

@@ -1283,7 +1283,7 @@ html {
     animation: bounce 0.6s infinite alternate;
   }
    .footer-logo>a>img{
-    margin-left: auto;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 450px) {

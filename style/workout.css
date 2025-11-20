@@ -1418,6 +1418,9 @@ html {
    .footer-logo>a>img{
     margin-left: 50px;
   }
+  .our-mission-top-hdr > h2{
+    margin-left: 50px;
+  }
 }
 @media screen and (max-width: 1260px) {
   /* navbar-sec */
@@ -2049,7 +2052,10 @@ html {
     animation: bounce 0.6s infinite alternate;
   }
    .footer-logo>a>img{
-    margin-left: auto;
+    margin-left: 10px;
+  }
+  .our-mission-top-hdr > h2{
+    margin-left: 10px;
   }
 }
 @media screen and (max-width:540px){
