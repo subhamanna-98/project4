@@ -1064,7 +1064,7 @@ html {
     margin-right: 12px;
   }
    .footer-logo>a>img{
-    margin-left: 50px;
+    padding-left: 50px;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -1405,7 +1405,7 @@ html {
     animation: bounce 0.6s infinite alternate;
   }
    .footer-logo>a>img{
-    margin-left: 10px;
+   padding-left: 40px;
   }
 }
 @media screen and (max-width: 550px) {
