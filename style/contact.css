@@ -530,9 +530,9 @@ html {
 
 /* footer-secion */
 .footer-sec {
-  padding: 50px 50px;
+  padding: 50px 0px;
   background: var(--primary-color);
-  width: 100%;
+ margin: 0px 10px 10px 10px;
   border-radius: 40px;
 }
 .footer-logo {
@@ -1069,6 +1069,9 @@ html {
   .footer-sub-mid-hdr {
     margin-bottom: 15px;
   }
+  .send-btn{
+    margin-left: 190px;
+  }
 }
 @media screen and (max-width: 1050px) {
   .col-33 {
@@ -1228,8 +1231,8 @@ html {
    /* .footer-logo>a>img{
    padding-left: 40px;
   } */
-   .footer-sec{
-    padding-inline: 20px;
+   .send-btn{
+    margin-left: auto;
    }
 }
 

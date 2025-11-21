@@ -557,9 +557,9 @@ html {
 
 /* footer-secion */
 .footer-sec {
-  padding: 50px 50px;
+  padding: 50px 0px;
   background: var(--primary-color);
-  width: 100%;
+  margin: 0px 10px 10px 10px;
   border-radius: 40px;
 }
 .footer-logo {
@@ -1090,7 +1090,7 @@ html {
 @media screen and (max-width: 1100px) {
   
   .send-btn {
-    margin-bottom: 15px;
+    margin: 0 auto;
   }
   .footer-sub-menu {
     margin-bottom: 20px;
@@ -1118,6 +1118,9 @@ html {
     font-size: 21px;
     font-weight: 500;
   }
+      .send-btn {
+        margin-left: 190px;
+      }
 }
 @media screen and (max-width: 992px){
   .col-19{
@@ -1259,6 +1262,9 @@ html {
   .footer-btm-rhgt > ul {
     flex-direction: column;
   }
+  .send-btn {
+        margin-left: auto;
+      }
   .faq-top-hdr > h2 {
     font-size: 45px;
     margin-bottom: 20px;
@@ -1283,12 +1289,6 @@ html {
     border-radius: 50%;
     animation: bounce 0.6s infinite alternate;
   }
-   /* .footer-logo>a>img{
-    padding-left: 50px;
-  } */
-   .footer-sec{
-    padding-inline: 20px;
-   }
 }
 @media screen and (max-width: 450px) {
   .primary-btn {
