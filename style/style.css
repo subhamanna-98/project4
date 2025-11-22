@@ -3667,7 +3667,7 @@ margin-left: -530px;
   }
   .galary-rhgt-btn {
     position: relative;
-    right: 150px;
+    right: 100px;
   }
  
 }
@@ -3874,7 +3874,7 @@ margin-left: -530px;
   }
   .galary-rhgt-btn {
     position: relative;
-    right: 150px;
+    right: 50px;
     bottom: -25px;
   }
  
@@ -4258,7 +4258,7 @@ margin-left: -50px;
   }
   .galary-rhgt-btn {
     position: relative;
-    right: 100px;
+    right: 50px;
     bottom: -25px;
   }
   
@@ -4725,8 +4725,8 @@ margin-left: -90px;
     font-size: 35px;
   }
   .galary-rhgt-cntn > h5 {
-    font-size: 27px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 15px;
   }
   .galary-rhgt-cntn > p {
     font-size: 12px;

@@ -508,7 +508,7 @@ html {
   right: -135px;
   top: 140px;
   transform: rotate(90deg);
-  display: none;
+  /* display: none; */
 }
 .contact-cntn > h6 {
   font-size: 30px;
@@ -1082,6 +1082,9 @@ html {
   }
   .contact-row {
     justify-content: center;
+  }
+  .contact-1::before{
+    display: none;
   }
 }
 @media screen  and (max-width:992px){
